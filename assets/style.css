@@ -18,14 +18,14 @@ body {
   display: grid;
   place-items: center;
   background-color: #121214;
-  background-image: url(./images/background-desktop.png);
+  background-image: url(../images/background-desktop.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 main {
-  background: url(images/background.png);
+  background: url(../images/background.png);
   width: 375px;
   height: 780px;
 
@@ -121,7 +121,7 @@ ul {
   main {
     width: 358px;
     height: 560px;
-    background: url(./images/background-card-desktop.png);
+    background: url(../images/background-card-desktop.png);
     background-size: 358px 560px;
   }
 
