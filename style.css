@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  --grey-white: hsl(240, 9%, 89%);
+  --grey: hsl(240, 7%, 78%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: #121214;
+  background-image: url(./images/background-desktop.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  background: url(images/background.png);
+  width: 375px;
+  height: 780px;
+
+  color: var(--grey-white);
+  border-radius: 5px;
+
+  background-color: rgba(126, 126, 126, 0.2);
+  box-shadow: 5px 15px 30px 5px rgba(0, 0, 0, 0.7); 
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.avatar {
+  max-width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+p {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+ul {
+  margin: 4rem auto 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+
+  list-style: none;
+}
+
+.my-badge-logo {
+  position: absolute;
+  top: 2.5rem;
+
+  left: 20px;
+  /* margin-left: -155px; */
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+/* Media queries */
+
+@media (min-width: 800px) {
+  main {
+    width: 358px;
+    height: 560px;
+    background: url(./images/background-card-desktop.png);
+    background-size: 358px 560px;
+  }
+
+  .avatar {
+    margin: 4.7rem auto 0;
+  }
+
+  ul {
+    margin: 1.5rem auto 0;
+  }
+  
+  .rope {
+    position: absolute;
+    z-index: 2;
+    width: 80px;
+    height: 750px;
+    background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
+    border-radius: 0 0 3px 3px;
+    /* right: vw; */
+    top: 0;
+    margin-top: -45rem;
+    margin-left: 8.9rem;
+    /* margin-left: -40px; */
+  }
+
+  .clasp {
+    position: absolute;
+    background: #121214;
+    z-index: 1;
+    width: 100px;
+    height: 12px;
+    margin-left: 8.3rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .my-badge-logo {
+    position: static;
+    margin: 2rem auto 0;
+    margin-left: 15px;
+    background: none;
+    box-shadow: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 320px;
+  }
+}
+/* Animations */
+
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spinning {
+	animation: loading 10s linear infinite;
+}
+
+#avatarImage {
+  transition: all ease 1s;
+}
+
+#avatarImage:hover {
+  width: 11.5rem;
+  height: 13rem;
+}
+
+.social-btn {
+  position: relative;
+  border-radius: 0.25rem;
+  width: 50px;
+  top: 0;
+  transition: all ease 0.3s;
+}
+.social-btn:hover {
+  border-radius: 50%;
+  top: -8px;
+}
+
+/* Social buttons shadow */
+
+.youtube-img:hover {
+  box-shadow: 0rem 5px 15px rgba(255, 0, 0, 0.5);
+}
+
+.linkedin-img:hover {
+  box-shadow: 0rem 5px 15px rgba(40, 103, 178, 0.5);
+}
+
+.instagram-img:hover {
+  box-shadow: 0rem 5px 15px rgba(247, 119, 55, 0.5);
+}
+
+.twitter-img:hover {
+  box-shadow: 0rem 5px 15px rgba(0, 172, 238, 0.5);
+}

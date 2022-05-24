@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>My Badge Profile</title>
+</head>
+
+<body>
+  <main>
+    <div class="rope"></div>
+    <div class="clasp"></div>
+    <div class="container">
+      <div class="avatar">
+        <span>
+          <img class="spinning" src="./images/selo-rocketseat.svg" alt="Selo branco da Rocketseat">
+        </span>
+        <img id="avatarImage" src="http://lorempixel.com/185/185/people" alt="Foto pessoal do Github">
+      </div>
+
+      <h1 id="developerName">Name is here</h1>
+
+      <a id="githubLinkProfile" href="https://github.com/" target="_blank">
+        <img src="./images/logo-github.svg" alt="Logo pequena do Github">
+        <span id="githubUsername">Username is here</span>
+      </a>
+
+      <p id="biography">
+        Biography is here
+      </p>
+
+      <ul id="socialUsernames">
+        <li class="youtube">
+          <a href="#" target="_blank">
+            <img class="youtube-img social-btn" src="./images/logo-youtube.svg" alt="Logo YouTube">
+          </a>
+
+        <li class="linkedin">
+          <a href="https://www.linkedin.com/in/paulohenriquejr/" target="_blank">
+            <img class="linkedin-img social-btn" src="./images/logo-linkedin.svg" alt="Logo Linkedin">
+          </a>
+        </li>
+        <li class="instagram">
+          <a href="https://www.instagram.com/paulohenryjr" target="_blank">
+            <img class="instagram-img social-btn" src="./images/logo-instagram.svg" alt="Logo Instagram">
+          </a>
+        </li>
+        <li class="twitter">
+          <a href="https://twitter.com/elmineirojr" target="_blank">
+            <img class="twitter-img social-btn" src="./images/logo-twitter.svg" alt="Logo Twitter">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <img class="my-badge-logo" src="./images/my-badge-logo-profile.png" alt="My Badge Logo Profile">
+  </main>
+
+
+  <script src="main.js"></script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector("main"), {
+      max: 7,
+      speed: 300
+    });
+  </script>
+</body>
+
+</html>
