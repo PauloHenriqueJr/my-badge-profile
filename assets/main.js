@@ -1,6 +1,6 @@
 const usersSocial = {
   github: "PauloHenriqueJr",
-  linkedin: "in/paulohenriquejr",
+  linkedin: "in/paulohenrique-jr",
   instagram: "paulohenryjr",
   twitter: "elmineirojr"
 }
